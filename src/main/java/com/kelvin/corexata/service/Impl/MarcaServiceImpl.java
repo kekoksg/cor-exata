@@ -10,6 +10,17 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+// TODO: Melhorias necessárias (Clean Code + SOLID)
+//
+// 1. Substituir RuntimeException por exceções customizadas:
+//    - MarcaNaoEncontradaException
+//    - MarcaJaExisteException
+//
+// 2. Desacoplar camada de service de DTOs (MarcaRequest):
+//    - Receber apenas entidades (Marca) na service
+//    - Fazer conversão no controller
+
+
 @Service
 public class MarcaServiceImpl implements MarcaService {
 
